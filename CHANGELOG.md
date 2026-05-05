@@ -6,6 +6,8 @@ Change history for claude-code-harness.
 
 ## [Unreleased]
 
+## [4.6.0] - 2026-05-05
+
 ### Added
 
 - Release pre-gate version sync now checks `VERSION`, `package.json` when present, `.claude-plugin/plugin.json`, and `.claude-plugin/marketplace.json` `metadata.version` / `plugins[].version` with a structured parser before tag or release work proceeds.
@@ -28,6 +30,7 @@ Change history for claude-code-harness.
 - `.claude-plugin/marketplace.json` now carries version metadata aligned with `VERSION` and `.claude-plugin/plugin.json`.
 - `review-ai-residuals.sh --include-untracked` now scans untracked source/config files through the same JSON contract as tracked diffs, removing the manual grep path from Claude and Codex review docs.
 - Plugin agent frontmatter no longer carries ignored `permissionMode` or agent-local `hooks`; write safety is documented as plugin hooks plus Go guardrails plus Worker preflight.
+- Team composition guidance now lives under `docs/` instead of the plugin agent directory, keeping Claude plugin validation warning-free.
 - `validate-plugin.sh` now distinguishes executable entrypoints from source-only shell libraries and keeps the plugin validation summary at zero warnings.
 - Template registry coverage now includes locale, rule, and sandbox templates without false duplicate-output failures.
 
@@ -3728,7 +3731,8 @@ Purpose: 自己修正ループ失敗時に「止まるだけ」から「次の�
 
 For v2.9.x and earlier, see [GitHub Releases](https://github.com/Chachamaru127/claude-code-harness/releases).
 
-[Unreleased]: https://github.com/Chachamaru127/claude-code-harness/compare/v4.5.4...HEAD
+[Unreleased]: https://github.com/Chachamaru127/claude-code-harness/compare/v4.6.0...HEAD
+[4.6.0]: https://github.com/Chachamaru127/claude-code-harness/compare/v4.5.4...v4.6.0
 [4.5.4]: https://github.com/Chachamaru127/claude-code-harness/compare/v4.5.3...v4.5.4
 [4.5.3]: https://github.com/Chachamaru127/claude-code-harness/compare/v4.5.2...v4.5.3
 [4.5.2]: https://github.com/Chachamaru127/claude-code-harness/compare/v4.5.1...v4.5.2

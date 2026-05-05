@@ -847,7 +847,7 @@ permissionMode: bypassPermissions  # 追加
 ### Agent Teams 公式ベストプラクティス (v2.1.72+)
 
 Claude Code 公式に `agent-teams.md` が独立ドキュメントとして整備された。
-Harness の `agents/team-composition.md` に以下を反映:
+Harness の `docs/team-composition.md` に以下を反映:
 
 1. **タスク粒度ガイドライン**: 5-6 tasks/teammate の推奨値
 2. **`teammateMode` 設定**: `"auto"` / `"in-process"` / `"tmux"` の公式サポート

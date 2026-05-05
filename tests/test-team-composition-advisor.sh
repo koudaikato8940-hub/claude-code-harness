@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "${SCRIPT_DIR}")"
 
 ADVISOR_FILE="${PROJECT_ROOT}/agents/advisor.md"
-TEAM_FILE="${PROJECT_ROOT}/agents/team-composition.md"
+TEAM_FILE="${PROJECT_ROOT}/docs/team-composition.md"
 WORKER_FILE="${PROJECT_ROOT}/agents/worker.md"
 REVIEWER_FILE="${PROJECT_ROOT}/agents/reviewer.md"
 

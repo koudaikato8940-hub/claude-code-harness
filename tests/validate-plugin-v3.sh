@@ -193,10 +193,10 @@ for agent in "${V3_AGENTS[@]}"; do
 done
 
 # team-composition.md
-if [ -f "$PLUGIN_ROOT/agents/team-composition.md" ]; then
-  pass_test "agents/team-composition.md"
+if [ -f "$PLUGIN_ROOT/docs/team-composition.md" ]; then
+  pass_test "docs/team-composition.md"
 else
-  warn_test "agents/team-composition.md (なし)"
+  warn_test "docs/team-composition.md (なし)"
 fi
 
 # ============================================================
